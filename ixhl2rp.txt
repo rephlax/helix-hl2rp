@@ -1,7 +1,7 @@
 "ixhl2rp"
 {
 	"base"		"helix"
-	"title"		"HL2 RP"
+	"title"		"MRP"
 	"author"	"nebulous.cloud"
 	"category"	"rp"
 	"menusystem" "1"
