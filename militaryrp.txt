@@ -1,7 +1,7 @@
-"ixhl2rp"
+"militaryrp"
 {
 	"base"		"helix"
-	"title"		"MRP"
+	"title"		"MilitaryRP"
 	"author"	"nebulous.cloud"
 	"category"	"rp"
 	"menusystem" "1"
