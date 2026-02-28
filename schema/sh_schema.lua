@@ -1,7 +1,7 @@
 
-Schema.name = "HL2 RP"
-Schema.author = "nebulous.cloud"
-Schema.description = "A schema based on Half-Life 2."
+Schema.name = "Military RP"
+Schema.author = "Tigz"
+Schema.description = "A schema based MRP"
 
 -- Include netstream
 ix.util.Include("libs/thirdparty/sh_netstream2.lua")
@@ -20,14 +20,14 @@ ix.util.Include("meta/sh_player.lua")
 ix.util.Include("meta/sv_player.lua")
 ix.util.Include("meta/sh_character.lua")
 
-ix.flag.Add("v", "Access to light blackmarket goods.")
-ix.flag.Add("V", "Access to heavy blackmarket goods.")
+-- ix.flag.Add("v", "Access to light blackmarket goods.")
+-- ix.flag.Add("V", "Access to heavy blackmarket goods.")
 
-ix.anim.SetModelClass("models/eliteghostcp.mdl", "metrocop")
-ix.anim.SetModelClass("models/eliteshockcp.mdl", "metrocop")
-ix.anim.SetModelClass("models/leet_police2.mdl", "metrocop")
-ix.anim.SetModelClass("models/sect_police2.mdl", "metrocop")
-ix.anim.SetModelClass("models/policetrench.mdl", "metrocop")
+-- ix.anim.SetModelClass("models/eliteghostcp.mdl", "metrocop")
+-- ix.anim.SetModelClass("models/eliteshockcp.mdl", "metrocop")
+-- ix.anim.SetModelClass("models/leet_police2.mdl", "metrocop")
+-- ix.anim.SetModelClass("models/sect_police2.mdl", "metrocop")
+-- ix.anim.SetModelClass("models/policetrench.mdl", "metrocop")
 
 function Schema:ZeroNumber(number, length)
 	local amount = math.max(0, length - string.len(number))
