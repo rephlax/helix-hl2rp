@@ -1,19 +1,19 @@
-FACTION.name = "Uk Military"
-FACTION.description = "The United Kingdom military"
-FACTION.color = Color(255, 0, 0, 255)
+FACTION.name = "Insurgents"
+FACTION.description = "The Insurgent forces"
+FACTION.color = Color(0, 255, 0, 255)
 FACTION.isDefault = true
 FACTION.models = {"models/combine_soldier.mdl"}             --just for now
 
 
 function FACTION:OnCharacterCreated(client, character)
     local inventory = character:GetInventory()
-    inventory:Add("Ration", 1)
-    inventory:Add("Water", 1)
+    inventory:Add("ration", 1)
+    inventory:Add("water", 1)
 end
 
 function FACTION:GetDefaultName(client, character)
     local name = character:GetName()
-    return "UK PVT " .. name
+    return "INS RCT " .. name
 end
 
 function FACTION:OnTransferred(client, character)
@@ -27,4 +27,4 @@ function FACTION:OnNameChanged(client, oldValue, value)
     if  -- TODO: rank check goes here once rank system is built
 end
 
-FACTION_UKF = FACTION.index
+FACTION_INS = FACTION.index
